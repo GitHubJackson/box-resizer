@@ -1,13 +1,22 @@
 {
   "name": "box-resizer",
   "version": "1.0.0",
+  "description": "可自由调整容器大小的组件",
   "main": "lib/index.js",
   "author": "Lucas",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://github.com/GitHubJackson/box-resizer",
+  "repository": {
+    "url": "https://github.com/GitHubJackson/box-resizer"
+  },
+  "bugs": {
+    "url": "https://github.com/GitHubJackson/box-resizer/issues"
+  },
   "scripts": {
     "start": "rollup -c -w",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",

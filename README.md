@@ -9,7 +9,7 @@
 直接将组件 BoxResizer 放入需要调整的容器中即可，假设容器是 Box
 ```
 // hook中使用
-import { BoxResizer } from '@lucasz/box-resizer';
+import { BoxResizer } from '@lucascv/box-resizer';
 ...
 const boxRef = useRef<HTMLDivElement>(null);
 

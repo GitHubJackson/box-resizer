@@ -1,4 +1,4 @@
-# react-div-resizer
+# box-resizer
 
 这是一个可通过鼠标拖拽，从各个方向来调整容器大小的组件
 

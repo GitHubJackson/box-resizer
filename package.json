@@ -1,9 +1,9 @@
 {
-  "name": "box-resizer",
+  "name": "@lucascv/box-resizer",
   "version": "1.0.0",
   "description": "可自由调整容器大小的组件",
   "main": "lib/index.js",
-  "author": "lucascv",
+  "author": "Lucas",
   "license": "MIT",
   "type": "module",
   "homepage": "https://github.com/GitHubJackson/box-resizer",

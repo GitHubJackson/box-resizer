@@ -1,5 +1,6 @@
+import classnames from 'classnames';
 import React, { useEffect, useRef } from 'react';
-import './index.less';
+import styles from './index.module.less';
 
 // resizer 对象
 const resizeConf = {
@@ -456,7 +457,7 @@ export default function BoxResizer(props: any) {
         resizeDirections.map((d, i) => {
           return (
             <div
-              className={`resizer-${d} resizer`}
+              className={classnames(styles[`resizer-${d}`], styles['resizer'])}
               onMouseDown={e => handleMouseDown(d, e)}
               onMouseUp={handleMouseUp}
               key={i}

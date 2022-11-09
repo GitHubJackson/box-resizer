@@ -1,6 +1,6 @@
 {
   "name": "@lucascv/box-resizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "可自由调整容器大小的组件",
   "main": "lib/index.js",
   "author": "Lucas",

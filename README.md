@@ -4,14 +4,18 @@
 
 [在线预览](https://blog.zhouweibin.top/lab/box-resizer)
 
+### 安装
+```
+yarn add @lucascv/box-resizer
+// npm install @lucascv/box-resizer
+```
 ### 使用
-#### 怎么使用
-直接将组件 BoxResizer 放入需要调整的容器中即可，假设容器是 Box
+直接将组件 BoxResizer 放入需要调整的容器中即可，假设容器组件是 Box
 ```
 // hook中使用
 import { BoxResizer } from '@lucascv/box-resizer';
 ...
-const boxRef = useRef<HTMLDivElement>(null);
+const boxRef = useRef<HTMLDivElement|null>(null);
 
 return (
   ...
@@ -27,12 +31,12 @@ return (
 ```
 .Container {
   position: absolute;
-  box-sizing: border-box;
   top: 100px;
   left: 100px;
   width: 300px;
   height: 300px;
-  // 以上为必备属性
+  // NOTE: 以上为必备属性
+  box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: aquamarine;

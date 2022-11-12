@@ -2,7 +2,7 @@
 
 这是一个可通过鼠标拖拽，从各个方向来调整容器大小的组件
 
-### 在线预览
+[在线预览](https://blog.zhouweibin.top/lab/box-resizer)
 
 ### 使用
 #### 怎么使用

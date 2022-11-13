@@ -1,6 +1,9 @@
 import babel from 'rollup-plugin-babel';
 import typescript from 'rollup-plugin-typescript2';
 import postcss from 'rollup-plugin-postcss';
+import filesize from 'rollup-plugin-filesize';
+
+const isProd = process.env.NODE_ENV === 'production';
 
 export default {
   input: 'src/index.ts',
@@ -10,6 +13,6 @@ export default {
     file: './lib/index.js',
     format: 'esm'
   },
-  plugins: [typescript(), babel(), postcss()],
+  plugins: [typescript(), babel(), postcss(), filesize()],
   external: ['react']
 };

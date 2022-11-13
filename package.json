@@ -1,6 +1,6 @@
 {
   "name": "@lucascv/box-resizer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "可自由调整容器大小的组件",
   "main": "lib/index.js",
   "author": "Lucas",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "rollup -c -w",
-    "build": "rollup -c",
+    "build": "NODE_ENV=production rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -36,6 +36,7 @@
     "rollup-plugin-filesize": "^9.1.2",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-uglify": "^6.0.4",
     "typescript": "^4.8.4"
   },
   "peerDependencies": {

@@ -8,12 +8,16 @@ const isProd = process.env.NODE_ENV === 'production';
 
 export default {
   input: 'src/index.ts',
-  output: {
-    // file: "cjs.js",
-    // format: "cjs",
-    file: './lib/index.js',
-    format: 'esm'
-  },
+  output: [
+    {
+      file: 'lib/index.cjs.js',
+      format: 'cjs'
+    },
+    {
+      file: 'lib/index.esm.js',
+      format: 'esm'
+    }
+  ],
   plugins: [typescript(), babel(), postcss(), filesize(), isProd && uglify()],
   external: ['react']
 };

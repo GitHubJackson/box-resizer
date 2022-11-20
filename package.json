@@ -1,6 +1,6 @@
 {
   "name": "@lucascv/box-resizer",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "可自由拖动边框调整容器大小的插件式组件，支持自定义可拖动调整的方向",
   "keywords": [
     "resizer",

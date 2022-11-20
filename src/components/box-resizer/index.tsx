@@ -140,7 +140,7 @@ export default function ModalResizer(props: IProps) {
         const transformStyle = boxRef.current.style.transform;
         const translate = transformStyle
           .match(/translate\((.*?)\)/)[1]
-          .split(', ')[0];
+          .split(', ');
         const translateX = parseInt(translate[0]);
         const realLeft = previewModalLeft - translateX;
         const newPreviewModalWidth = previewModalWidth - diffWidth;
